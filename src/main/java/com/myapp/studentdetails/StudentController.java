@@ -20,6 +20,7 @@ public class StudentController {
 	
 	@PostMapping(value="/post")
 	public String postDetails(@RequestBody Student s)throws InvalidAgeException {
+		System.out.println("hello vikram you are using git");
 		return ss.postDetails(s);
 	}
 	@GetMapping(value="/get")
